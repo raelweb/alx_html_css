@@ -1,0 +1,27 @@
+/* Make body a flex container with vertical layout */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* full viewport height */
+}
+
+/* Make main a flex container with horizontal layout */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* take remaining space */
+}
+
+/* Article takes 2/3 of width, scrollable if content overflows */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Aside takes 1/3 of width, scrollable if content overflows */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
